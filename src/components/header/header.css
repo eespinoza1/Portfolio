@@ -66,14 +66,14 @@ header {
 
 .mei {
   background: linear-gradient(var(--color-primary), transparent);
-  width: 16em;
+  width: 18em;
   height: 22rem;
   position: absolute;
   left: calc(50% - 11rem);
-  margin-top: 8rem;
+  margin-top: 1rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  padding: -50rem -5rem 1.5rem 1.5rem;
 }
 
 .scroll_down {

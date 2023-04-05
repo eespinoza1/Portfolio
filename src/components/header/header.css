@@ -64,7 +64,7 @@ header {
   background: var(--color-primary);
 }
 
-.me {
+.mei {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
@@ -73,7 +73,7 @@ header {
   margin-top: 5rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 0.001rem 1rem 1rem 1rem;
 }
 
 .scroll_down {

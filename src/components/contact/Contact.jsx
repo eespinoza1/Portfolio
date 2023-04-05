@@ -27,6 +27,7 @@ const Contact = () => {
       );
     e.target.reset();
   };
+  
 
   return (
     <section id="contact">
@@ -37,7 +38,7 @@ const Contact = () => {
           <article className="contact_option">
             <MdOutlineEmail className="contact_option-icon" />
             <h4>Email</h4>
-            <h5>ericksespinoza1@gmail.com</h5>
+            <h6>ericksespinoza1@gmail.com</h6>
             <a href="mailto:ericksespinoza1@gmail.com" target="_blank">
               Send a message
             </a>

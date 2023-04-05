@@ -66,11 +66,11 @@ header {
 
 .mei {
   background: linear-gradient(var(--color-primary), transparent);
-  width: 18em;
+  width: 22em;
   height: 25rem;
   position: absolute;
   left: calc(50% - 11rem);
-  margin-top: 8rem;
+  margin-top: 0.5rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 0rem 1.5rem 1.5rem 1.5rem;

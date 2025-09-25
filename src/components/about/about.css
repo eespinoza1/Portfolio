@@ -1,0 +1,115 @@
+/* Contenedor principal */
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 55%;
+  gap: 10%;
+  align-items: center;
+}
+
+/* Imagen */
+.about__me {
+  width: auto;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__me-img {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(8deg);
+  transition: transform 0.4s ease;
+}
+
+.about__me-img:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+/* Cards */
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.about__card h5 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.about__card small {
+  font-size: 0.85rem;
+  color: var(--color-light);
+}
+
+/* Texto */
+.about__content p {
+  margin: 1rem 0 2rem;
+  color: var(--color-light);
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about__me {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+}
+
+/* Móviles */
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 80%;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__content p {
+    font-size: 0.9rem;
+    margin: 1rem 0 1.5rem;
+  }
+}
